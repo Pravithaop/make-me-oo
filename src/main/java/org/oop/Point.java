@@ -23,8 +23,8 @@ public class Point {
         return Math.atan2(yDistance, xDistance);
     }
 
-    private double getDistance(double x, double y) {
-        return x - y;
+    private double getDistance(double value1, double value2) {
+        return value1 - value2;
     }
 
 }
