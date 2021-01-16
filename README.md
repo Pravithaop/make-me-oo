@@ -26,3 +26,29 @@ He thought it'll be a good idea to convert this to Object Oriented Programming. 
 However, his trainer told him that what he did is not Object Oriented programming and asked Shivam to try again. 
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
+
+------------------------------------------------------------------------------
+
+Problems with Shivam's OOP solution.
+
+
+- There is no need of getters and setters in the solution.
+- Properties should be declared as final. It’s to indicate that the properties values cannot be changed.The fields should be final
+- The point.java files do not have any behaviour. It’s an example of data class codesmell.
+- Setters are not used in the code.
+
+- Apart from using getters and setters the code is similar as that of procedural code. No oop concept applied.
+- No need of using static keywords in the methods.Static methods do not encapsulate.
+- We can refactor the distance calculation into a method.
+-  DistanceAndDirection.java file is removed
+
+
+
+DistanceAndDirectionCalculatorTest.j
+
+- Doesn’t follow AAA format.
+- Magic number code smell. That expected value can be moved into a variable named “expected”.
+- Import statement can be optimised for assertEquals.
+
+
+
